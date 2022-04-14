@@ -1,5 +1,6 @@
 # whatsapp-web.js  https://github.com/pedroslopez/whatsapp-web.js/
 
+- Não funcionou no meu teste
 - Baseado no puppeteer
 - O QRCode aparece no console em form de texto. Não é muito prático
 

@@ -7,8 +7,9 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "wppcnt": "nodemon ./wppconnect/index.js",
-    "wppwebjs": "nodemon ./whatsappwebjs/index.js"
+    "wpp:wppcnt": "nodemon ./whatsapp/wppconnect/index.js",
+    "wpp:wppwebjs": "nodemon ./whatsapp/whatsappwebjs/index.js",
+    "wpp:venom": "nodemon ./whatsapp/venom/index.js"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
@@ -16,6 +17,7 @@
   "dependencies": {
     "@wppconnect-team/wppconnect": "^1.12.8",
     "dotenv": "^16.0.0",
+    "venom-bot": "^4.0.9",
     "whatsapp-web.js": "^1.16.5"
   }
 }
