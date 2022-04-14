@@ -1,0 +1,19 @@
+{
+  "name": "testlibraries202201",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Juliapp/Testing-Libraries-202201.git",
+  "author": "Juliana <aragaopintojuli@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "wppcnt": "nodemon ./wppconnect/index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "@wppconnect-team/wppconnect": "^1.12.8",
+    "dotenv": "^16.0.0"
+  }
+}
