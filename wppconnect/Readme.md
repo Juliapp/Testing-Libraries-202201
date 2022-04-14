@@ -1,4 +1,4 @@
-# Review da lib
+# Review da lib https://github.com/wppconnect-team/wppconnect
 
 - Ela utiliza o puppeteer para fazer integração com o wpp web
 - Você tem que connectar o QRCode do seu whatsapp pra poder usar a lib
