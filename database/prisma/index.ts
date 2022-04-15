@@ -7,13 +7,14 @@ const prisma = new PrismaClient();
 // Query usando Raw Queries
 async function DB() {
   // Inserção de um dado
-  // await prisma.$queryRaw`
-  // INSERT INTO Pessoa(nome, idade)
-  // VALUES
-  // ('Mateus', 18)
+  //await prisma.$queryRaw`
+  //  INSERT INTO Pessoa(nome, idade)
+  //  VALUES
+  //  ('Mateus', 18)
   // `;
 
-  prisma.$queryRaw`SELECT * FROM Pessoa`.then(console.log);
+  const pessoas = prisma.$queryRaw`SELECT * FROM Pessoa`;
+  console.log(pessoas);
 }
 
 DB();
