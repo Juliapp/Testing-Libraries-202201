@@ -8,12 +8,12 @@ const prisma = new PrismaClient();
 async function DB() {
   // Inserção de um dado
   //await prisma.$queryRaw`
-  //  INSERT INTO Pessoa(nome, idade)
-  //  VALUES
-  //  ('Mateus', 18)
+  //  INSERT INTO pessoa(nome, idade)
+  // VALUES
+  //   ('Mateus', 18);
   // `;
 
-  const pessoas = await prisma.$queryRaw`SELECT * FROM Pessoa`;
+  const pessoas = await prisma.$queryRaw`SELECT * FROM pessoa`;
   console.log(pessoas);
 }
 

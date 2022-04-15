@@ -1,10 +1,10 @@
-CREATE TABLE IF NOT EXISTS  Pessoa(
+CREATE TABLE IF NOT EXISTS  pessoa(
   id INT PRIMARY KEY AUTO_INCREMENT,
   nome VARCHAR(255) NOT NULL,
   idade INT
 );
 
-INSERT INTO Pessoa(nome, idade)
+INSERT INTO pessoa(nome, idade)
 VALUES
   ('Maria', 70)
   ('João', 30),
