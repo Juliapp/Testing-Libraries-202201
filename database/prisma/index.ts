@@ -13,7 +13,7 @@ async function DB() {
   //  ('Mateus', 18)
   // `;
 
-  const pessoas = prisma.$queryRaw`SELECT * FROM Pessoa`;
+  const pessoas = await prisma.$queryRaw`SELECT * FROM Pessoa`;
   console.log(pessoas);
 }
 
