@@ -10,8 +10,12 @@
     "wpp:wppcnt": "nodemon ./whatsapp/wppconnect/index.js",
     "wpp:wppwebjs": "nodemon ./whatsapp/whatsappwebjs/index.js",
     "wpp:venom": "nodemon ./whatsapp/venom/index.js",
+    "wpp:wbm": "nodemon ./whatsapp/wbm/index.js",
+    "wpp:brzap": "nodemon ./whatsapp/brazucazap/index.js",
     "db:prisma": "tsnd --transpile-only --ignore-watch node_modules --respawn  ./database/prisma/index.ts",
-    "db:sequelize": "nodemon ./database/sequelize/index.js"
+    "db:sequelize": "nodemon ./database/sequelize/index.js",
+    "tl:ntba": "nodemon ./telegram/nodetelegrambotapi/index.js",
+    "tl:tl": "nodemon ./telegram/telegram/index.js"
   },
   "devDependencies": {
     "nodemon": "^2.0.15",
@@ -21,10 +25,15 @@
   "dependencies": {
     "@prisma/client": "^3.12.0",
     "@wppconnect-team/wppconnect": "^1.12.8",
+    "brazuka-zap": "^0.0.12",
     "dotenv": "^16.0.0",
+    "input": "^1.0.1",
     "mysql2": "^2.3.3",
+    "node-telegram-bot-api": "^0.56.0",
     "sequelize": "^6.19.0",
+    "telegram": "^2.6.13",
     "venom-bot": "^4.0.9",
+    "wbm": "^1.1.16",
     "whatsapp-web.js": "^1.16.5"
   }
 }
