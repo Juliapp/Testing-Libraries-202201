@@ -46,7 +46,7 @@ async function DB() {
   // `);
 
   // Buscando
-  const result = await sequelize.query('SELECT * FROM Pessoa');
+  const result = await sequelize.query('SELECT * FROM pessoa');
   console.log(result);
   sequelize.raw;
 }
