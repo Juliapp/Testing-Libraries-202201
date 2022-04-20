@@ -1216,6 +1216,11 @@ deep-extend@^0.6.0:
   resolved "https://registry.yarnpkg.com/deep-extend/-/deep-extend-0.6.0.tgz#c4fa7c95404a17a9c3e8ca7e1537312b736330ac"
   integrity sha512-LOHxIOaPYdHlJRtCQfDIVZtfw/ufM8+rVj649RIHzcm/vGwQRXFt6OPqIFWsm2XEMrNIEtWR64sY1LEKD2vAOA==
 
+deepmerge@^3.2.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-3.3.0.tgz#d3c47fd6f3a93d517b14426b0628a17b0125f5f7"
+  integrity sha512-GRQOafGHwMHpjPx9iCvTgpu9NojZ49q794EEL94JVEw6VaeA8XTUyBKvAkOOjBX9oJNiV6G3P+T+tihFjo2TqA==
+
 deepmerge@^4.2.2:
   version "4.2.2"
   resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-4.2.2.tgz#44d2ea3679b8f4d4ffba33f03d865fc1e7bf4955"
@@ -3026,7 +3031,7 @@ mute-stream@0.0.7:
   resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-0.0.7.tgz#3075ce93bc21b8fab43e1bc4da7e8115ed1e7bab"
   integrity sha1-MHXOk7whuPq0PhvE2n6BFe0ee6s=
 
-mysql2@^2.3.3:
+mysql2@^2.1.0, mysql2@^2.3.3:
   version "2.3.3"
   resolved "https://registry.yarnpkg.com/mysql2/-/mysql2-2.3.3.tgz#944f3deca4b16629052ff8614fbf89d5552545a0"
   integrity sha512-wxJUev6LgMSgACDkb/InIFxDprRa6T95+VEoR+xPvtngtccNH2dGjEB/fVZ8yg1gWv1510c9CvXuJHi5zUm0ZA==
@@ -3039,6 +3044,16 @@ mysql2@^2.3.3:
     named-placeholders "^1.1.2"
     seq-queue "^0.0.5"
     sqlstring "^2.3.2"
+
+mysqldump@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/mysqldump/-/mysqldump-3.2.0.tgz#780abaf82f5c3f216d4e16db585092389d2a5497"
+  integrity sha512-hS4jUk23BT+qZEwp668eGwyFhmsDFHkIDYANLFeNXlvPK1AhOMLV+SGoKpAk8290sUhtUAIG16R3YrNhHmZ+zQ==
+  dependencies:
+    deepmerge "^3.2.0"
+    mysql2 "^2.1.0"
+    sql-formatter "^2.3.2"
+    sqlstring "^2.3.1"
 
 named-placeholders@^1.1.2:
   version "1.1.2"
@@ -4122,7 +4137,14 @@ spinnies@^0.5.1:
     cli-cursor "^3.0.0"
     strip-ansi "^5.2.0"
 
-sqlstring@^2.3.2:
+sql-formatter@^2.3.2:
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/sql-formatter/-/sql-formatter-2.3.4.tgz#85ff9a946d8157e3917c0b1db514ca8184a1b6f1"
+  integrity sha512-CajWtvzYoBJbD5PQeVe3E7AOHAIYvRQEPOKgF9kfKNeY8jtjBiiA6pDzkMuAID8jJMluoPvyKveLigSaA5tKQQ==
+  dependencies:
+    lodash "^4.17.20"
+
+sqlstring@^2.3.1, sqlstring@^2.3.2:
   version "2.3.3"
   resolved "https://registry.yarnpkg.com/sqlstring/-/sqlstring-2.3.3.tgz#2ddc21f03bce2c387ed60680e739922c65751d0c"
   integrity sha512-qC9iz2FlN7DQl3+wjwn3802RTyjCx7sDvfQEXchwa6CWOx07/WVfh91gBmQ9fahw8snwGEWU3xGzOt4tFyHLxg==

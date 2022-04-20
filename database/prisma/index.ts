@@ -1,4 +1,6 @@
 import { PrismaClient } from '@prisma/client';
+import mysqldump from 'mysqldump';
+
 const prisma = new PrismaClient();
 
 // Query com o orm puro
@@ -13,8 +15,23 @@ async function DB() {
   //   ('Mateus', 18);
   // `;
 
-  const pessoas = await prisma.$queryRaw`SELECT * FROM pessoa`;
-  console.log(pessoas);
+  // const pessoas = await prisma.$queryRaw`SELECT * FROM pessoa`;
+  // console.log(pessoas);
+
+  //Fazendo o backup do banco
+  // QUANDO FOR FAZER O SAVE UTILIZAR O DIA PARA ELE NÃO SOBRESCREVER O ULTIMO BACKUP
+  mysqldump({
+    connection: {
+      host: 'localhost',
+      user: 'root',
+      password: '1234',
+      database: 'teste',
+    },
+    dumpToFile: `BACKUP-${new Date().toISOString().slice(0, 10)}.sql`, //
+    // dumpToFile: './dump.sql', // Sem compressão
+    // dumpToFile: './dump.sql.gz', // Com compressão
+    // compressFile: true, // Com compressão
+  });
 }
 
 DB();
