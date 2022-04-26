@@ -178,6 +178,14 @@
   resolved "https://registry.yarnpkg.com/@tsconfig/node16/-/node16-1.0.2.tgz#423c77877d0569db20e1fc80885ac4118314010e"
   integrity sha512-eZxlbI8GZscaGS7kkc/trHTT5xgrjH3/1n2JDwusC9iahPKWMRvRjJSAN5mCXviuTGQ/lHnhvv8Q1YTpnfz9gA==
 
+"@types/cron@^1.7.3":
+  version "1.7.3"
+  resolved "https://registry.yarnpkg.com/@types/cron/-/cron-1.7.3.tgz#993db7d54646f61128c851607b64ba4495deae93"
+  integrity sha512-iPmUXyIJG1Js+ldPYhOQcYU3kCAQ2FWrSkm1FJPoii2eYSn6wEW6onPukNTT0bfiflexNSRPl6KWmAIqS+36YA==
+  dependencies:
+    "@types/node" "*"
+    moment ">=2.14.0"
+
 "@types/debug@^4.1.0", "@types/debug@^4.1.7":
   version "4.1.7"
   resolved "https://registry.yarnpkg.com/@types/debug/-/debug-4.1.7.tgz#7cc0ea761509124709b8b2d1090d8f6c17aadb82"
@@ -1101,6 +1109,11 @@ create-require@^1.1.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/create-require/-/create-require-1.1.1.tgz#c1d7e8f1e5f6cfc9ff65f9cd352d37348756c333"
   integrity sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ==
+
+croner@^4.3.9:
+  version "4.3.9"
+  resolved "https://registry.yarnpkg.com/croner/-/croner-4.3.9.tgz#3d8af486b68fd200c77bcca857522c90a61110d9"
+  integrity sha512-e9bqMBUoShzQ9Dazb3D86IvYPa94WGWTp8hyi+VMiFHrTBS65Re8c9e+k31tOpkiGQZCSOXBe0IssPZiOpBsMw==
 
 cross-fetch@3.1.5:
   version "3.1.5"
@@ -3005,6 +3018,11 @@ moment-timezone@^0.5.34:
   version "2.29.2"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.2.tgz#00910c60b20843bcba52d37d58c628b47b1f20e4"
   integrity sha512-UgzG4rvxYpN15jgCmVJwac49h9ly9NurikMWGPdVxm8GZD6XjkKPxDTjQQ43gtGgnV3X0cAyWDdP2Wexoquifg==
+
+moment@>=2.14.0:
+  version "2.29.3"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.3.tgz#edd47411c322413999f7a5940d526de183c031f3"
+  integrity sha512-c6YRvhEo//6T2Jz/vVtYzqBzwvPT95JBQ+smCytzf7c50oMZRsR/a4w88aD34I+/QVSfnoAnSBFPJHItlOMJVw==
 
 ms@2.0.0:
   version "2.0.0"

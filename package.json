@@ -19,6 +19,7 @@
     "tl:tl": "nodemon ./telegram/telegram/index.js"
   },
   "devDependencies": {
+    "@types/cron": "^1.7.3",
     "nodemon": "^2.0.15",
     "ts-node-dev": "^1.1.8",
     "typescript": "^4.6.3"
@@ -27,6 +28,7 @@
     "@prisma/client": "^3.12.0",
     "@wppconnect-team/wppconnect": "^1.12.8",
     "brazuka-zap": "^0.0.12",
+    "croner": "^4.3.9",
     "dotenv": "^16.0.0",
     "input": "^1.0.1",
     "mysql2": "^2.3.3",
